@@ -63,6 +63,8 @@ def player_statistics(db):
     ax.set_xlabel('Player Name')
     ax.set_ylabel('Count')
     ax.legend()
+    ax.set_axisbelow(True)
+    plt.grid(True, color = 'gray', linestyle = '--', linewidth = 0.5)
 
     # Adjust layout for better spacing
     plt.tight_layout()
