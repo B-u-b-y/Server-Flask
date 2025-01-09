@@ -1,9 +1,12 @@
+import matplotlib
+matplotlib.use('Agg') #used for non-interactive backend
+
 import base64
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 from io import BytesIO
-from flask import jsonify, send_file  # Import send_file here
+from flask import jsonify, send_file
 import geopandas as gpd
 
 def test_method(db):
